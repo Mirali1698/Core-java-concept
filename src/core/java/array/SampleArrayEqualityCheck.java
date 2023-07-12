@@ -1,0 +1,42 @@
+package core.java.array;
+
+public class SampleArrayEqualityCheck {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr1 = new int[] { 2, 3, 5, 7, 11 };
+		int[] arr2 = new int[] { 2, 3, 5, 7, 11 };
+		
+		//print both arrays
+		System.out.println("The first array is: ");
+		for(int i: arr1)
+			System.out.print(i+ " ");
+		
+		System.out.println("\nThe second array is: ");
+		for(int i: arr2)
+			System.out.print(i+ " ");
+
+		System.out.println();
+		boolean val = true;
+
+		if (arr1.length == arr2.length) {
+			for (int i = 0; i < arr1.length; i++) {
+				if (arr1[i] != arr2[i]) {
+					val = false;
+					break;
+				}else {
+					val = true;
+				}
+			}
+		} else {
+			val = false;
+		}
+
+		if (val == true) {
+			System.out.println("The arrays are equal");
+		} else {
+			System.out.println("The arrays are not equal");
+		}
+	}
+
+}
