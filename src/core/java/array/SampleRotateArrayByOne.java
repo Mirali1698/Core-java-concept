@@ -9,7 +9,7 @@ public class SampleRotateArrayByOne {
 		int[] arr = new int[] { 4, 5, 6, 1, 2, 3 };
 		
 		//define temporary variable
-		int swap;
+		int temp;
 		
 		//print the array
 		System.out.println("The array is: ");
@@ -21,7 +21,7 @@ public class SampleRotateArrayByOne {
 		//To rotate array value to the right by one index
 		
 		//Assign the value of last index to temporary variable
-		swap = arr[arr.length-1];
+		temp = arr[arr.length-1];
 		
 		//decrement for loop
 		//assign a[0] value to the a[1]
@@ -30,7 +30,7 @@ public class SampleRotateArrayByOne {
 		}
 		
 		//assign temporary value to the first index
-		arr[0] = swap;
+		arr[0] = temp;
 		
 		//End of logic for rotate array right by one
 		

@@ -15,10 +15,10 @@ public class SampleArraySort {
 		
 		System.out.println();
 		//use of two for loops 
-		//outer for loop: store one index value
+		//outer for loop: to compare one index value with every j value of array
 		for (int i = 0; i < arr.length; i++) {
 			
-			//inner loop: to compare one index value with every j value of array
+			//inner loop: to compare and increment j
 			for (int j = i + 1; j < arr.length; j++) {
 				
 				//swap the i and j index value

@@ -6,7 +6,7 @@ public class SampleArrayMissingInt {
 		// TODO Auto-generated method stub
 		
 		//initialize an array
-		int[] arr = new int[] {1, 2, 4, 5, 7};
+		int[] arr = new int[] {1, 2, 6, 7, 11, 12};
 		
 		//assign temp value as 1
 		int missValue = 1;
@@ -22,15 +22,11 @@ public class SampleArrayMissingInt {
 		for(int i = 0;i<arr.length; i++) {
 			
 			//to check if value at index i is equal to temporary counter and increment the counter by one
-			if(arr[i] == missValue) {
-				missValue++;
-			}
-			
-			//if both values are not same print the missing value and increment the counter by two
-			else {
+			if(arr[i] != missValue) {
 				System.out.println("The missing value is: " +missValue);
-				missValue= missValue+2;
+				i--;	
 			}
+			missValue++;
 		}
 	}
 
