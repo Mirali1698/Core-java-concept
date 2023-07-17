@@ -17,7 +17,7 @@ public class DemoStatic {
 		// call the default constructor
 		Student obj4 = new Student();
 
-		// assign the value to the local variables of Student class
+		// assign the value to the instance variables of Student class
 		obj4.studentName = "Rahul";
 		obj4.studentRollNumber = 25;
 	
@@ -66,7 +66,7 @@ public class DemoStatic {
 
 class Student {
 
-	// local variable defined within the class
+	// instance variable defined within the class
 	String studentName;
 	int studentRollNumber;
 	String myName = "XYZ";
@@ -78,11 +78,11 @@ class Student {
 	// create non-static method for print
 	public void printData() {
 
-		// yourName is instance variable and the scope is within this PrintData method
+		// yourName is local variable and the scope is within this PrintData method
 		// only
 		String yourName = "123";
 
-		// myName is local variable so can be used in any method within the same class
+		// myName is instance variable so can be used in any method within the same class
 		System.out.println("My name is from printData: " + myName);
 
 		System.out.println("Your Name is from PrintData: " + yourName);
@@ -97,16 +97,16 @@ class Student {
 	// create two parameterized constructor
 	public Student(String studentName, int studentRollNumber) {
 
-		// initialized the value to the local variable
-		// local variable = instance variable
+		// initialized the value to the instance variable
+		// instance variable = local variable
 		this.studentName = studentName;
 		this.studentRollNumber = studentRollNumber;
 		this.marks = 80;
 
-		// local variable can be used in any method within the same class
+		// instance variable can be used in any method within the same class
 		System.out.println("My name is from two parameterized constructor: " + myName);
 
-		// instance variable cannot be used outside of its scope
+		// local variable cannot be used outside of its scope
 //		System.out.println("Your Name is from two parameterized constructor: " +yourName);
 
 		System.out.println("Marks is from the two parameterized constructor: " + marks);
