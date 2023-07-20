@@ -7,8 +7,8 @@ public class FactorialSample {
 
 		//Print factorial of number
 		//n = n* (n-1)*(n-2)*...*1
-		int num = 7, sum = 1;
-		for (int i = num; i > 1; i--) {
+		int num = 5, sum = 1;
+		for (int i = num; i > 0; i--) {
 			sum = sum * i;
 		}
 		System.out.println(sum);
