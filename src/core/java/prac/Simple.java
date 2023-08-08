@@ -1,11 +1,18 @@
 package core.java.prac;
 
-public class HelloFirst {
+public class Simple {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Second Helloworld class");
-		System.out.println("Updation");
+
+		A a = new A();
+		System.out.println(a.c);
 	}
 
+}
+
+class A{
+	
+	int c;
+	int d;
 }
